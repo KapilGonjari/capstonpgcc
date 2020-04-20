@@ -1,7 +1,7 @@
 --- 
 artifacts: 
   files: 
-    - target/getcoindata-1.0.jar
+    - target/top5coinprice.json
 phases: 
   build: 
     commands: 

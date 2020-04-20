@@ -1,0 +1,17 @@
+version: 1.0
+
+phases:
+  install:
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn clean compile test -Dtest=getcoindata
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - target/gl-getcoindata-1.0.jar

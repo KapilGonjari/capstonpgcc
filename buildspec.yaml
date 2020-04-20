@@ -1,8 +1,7 @@
 version: 1.0
 
 phases:
-  install:
-  pre_build:
+    pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
   build:

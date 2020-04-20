@@ -1,7 +1,7 @@
 --- 
 artifacts: 
   files: 
-    - target/top5coinprice.json
+    - top5coinprice.json
 phases: 
   build: 
     commands: 

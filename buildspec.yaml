@@ -1,19 +1,19 @@
-version: 1.0
-
-phases:
- install:
-    runtime-versions:
+--- 
+artifacts: 
+  files: 
+    - target/getcoindata-1.0.jar
+phases: 
+  build: 
+    commands: 
+      - "echo Build started on `date`"
+      - "mvn clean compile test -Dtest=getcoindata"
+  install: 
+    runtime-versions: 
       java: corretto11
-    pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
-  build:
-    commands:
-      - echo Build started on `date`
-      - mvn clean compile test -Dtest=getcoindata
-  post_build:
-    commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - target/gl-getcoindata-1.0.jar
+  post_build: 
+    commands: 
+      - "echo Build completed on `date`"
+  pre_build: 
+    commands: 
+      - "echo Nothing to do in the pre_build phase..."
+version: 0.2
